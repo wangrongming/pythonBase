@@ -1,0 +1,26 @@
+<html>
+<head>
+ <title>Welcome, {{ username }}</title>
+</head>
+<body>
+ <p>Welcome, {{ username }}!</p>
+  <p>输入名字进行删除</p>
+ <form action="/delete" method="post">
+ <p><input name="username" placeholder="Username"></p>
+ <p><button type="submit">删除</button></p>
+ </form>
+ <table border="1" width="400"><tr>
+    <th>姓名</th>
+    <th>密码</th>
+  </tr></table>
+ {% for i in list %}
+ <table border="1" width="400">
+  <tr>
+    <th>{{ i[0] }}</th>
+    <th>{{ i[1] }}</th>
+  </tr>
+</table>
+{% endfor %}
+
+</body>
+</html>

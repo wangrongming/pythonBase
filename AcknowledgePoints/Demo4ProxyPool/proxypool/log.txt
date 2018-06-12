@@ -1,0 +1,95 @@
+
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/ HTTP/1.1" 200 None
+DEBUG:asyncio:Using selector: SelectSelector
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/ HTTP/1.1" 200 None
+DEBUG:asyncio:Using selector: SelectSelector
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/ HTTP/1.1" 200 4899
+DEBUG:asyncio:Using selector: SelectSelector
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/ HTTP/1.1" 200 4899
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/ HTTP/1.1" 200 4899
+DEBUG:asyncio:Using selector: SelectSelector
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/ HTTP/1.1" 200 4899
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/ HTTP/1.1" 200 4899
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/ HTTP/1.1" 200 4899
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/ HTTP/1.1" 200 4899
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/ HTTP/1.1" 200 4899
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/1/ HTTP/1.1" 200 4810
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/2/ HTTP/1.1" 200 4932
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/3/ HTTP/1.1" 200 4894
+DEBUG:asyncio:Using selector: SelectSelector
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/1/ HTTP/1.1" 200 4810
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/2/ HTTP/1.1" 200 4932
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/3/ HTTP/1.1" 200 4894
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/1/ HTTP/1.1" 200 4810
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/2/ HTTP/1.1" 200 4932
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/3/ HTTP/1.1" 200 4894
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<ValidityTester.test_single_proxy() done, defined at D:/pythonWorkplace/AcknowledgePoints/Demo4ProxyPool/proxypool/schedule.py:30> exception=ClientOSError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)>
+Traceback (most recent call last):
+  File "C:\Program Files\Anaconda3\lib\asyncio\tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "D:/pythonWorkplace/AcknowledgePoints/Demo4ProxyPool/proxypool/schedule.py", line 41, in test_single_proxy
+    async with session.get(self.test_api,proxy=real_proxy,timeout=get_proxy_timeout) as response:
+  File "C:\Program Files\Anaconda3\lib\site-packages\aiohttp\client.py", line 690, in __aenter__
+    self._resp = yield from self._coro
+  File "C:\Program Files\Anaconda3\lib\site-packages\aiohttp\client.py", line 277, in _request
+    yield from resp.start(conn, read_until_eof)
+  File "C:\Program Files\Anaconda3\lib\site-packages\aiohttp\client_reqrep.py", line 624, in start
+    (message, payload) = yield from self._protocol.read()
+  File "C:\Program Files\Anaconda3\lib\site-packages\aiohttp\streams.py", line 554, in read
+    yield from self._waiter
+  File "C:\Program Files\Anaconda3\lib\asyncio\futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "C:\Program Files\Anaconda3\lib\asyncio\tasks.py", line 296, in _wakeup
+    future.result()
+  File "C:\Program Files\Anaconda3\lib\asyncio\futures.py", line 274, in result
+    raise self._exception
+aiohttp.client_exceptions.ClientOSError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/1/ HTTP/1.1" 200 4809
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/2/ HTTP/1.1" 200 4933
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/3/ HTTP/1.1" 200 4882
+DEBUG:asyncio:Using selector: SelectSelector
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/1/ HTTP/1.1" 200 4809
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/2/ HTTP/1.1" 200 4933
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/3/ HTTP/1.1" 200 4882
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/1/ HTTP/1.1" 200 4809
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/2/ HTTP/1.1" 200 4933
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/3/ HTTP/1.1" 200 4882
+DEBUG:asyncio:Using selector: SelectSelector
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/1/ HTTP/1.1" 200 4809
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/2/ HTTP/1.1" 200 4933
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/3/ HTTP/1.1" 200 4882
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.kuaidaili.com
+DEBUG:requests.packages.urllib3.connectionpool:https://www.kuaidaili.com:443 "GET /free/inha/1/ HTTP/1.1" 200 4809
